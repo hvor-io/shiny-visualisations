@@ -10,6 +10,7 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-u
 
 VERY IMPORTANT. LTS versions please
 
+Installing R:
 ```
 ## update indices
 sudo apt update -qq
@@ -23,11 +24,28 @@ wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sud
 sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 
 sudo apt install --no-install-recommends r-base
+```
 
+Install R-tools for `make`
+```
 sudo apt-get install r-base-dev
+```
 
-
+Install shiny server 
+```
 sudo apt-get install gdebi-core
 wget https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.20.1002-amd64.deb
 sudo gdebi shiny-server-1.5.20.1002-amd64.deb
 ```
+
+Go into R and install rmarkdown:
+```
+> R
+> install.packages("rmarkdown")
+```
+
+and then 
+
+```
+sudo systemctl restart shiny-server
+``` 
