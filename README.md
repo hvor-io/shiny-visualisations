@@ -48,4 +48,9 @@ and then
 
 ```
 sudo systemctl restart shiny-server
-``` 
+```
+
+Is it running?
+```
+sudo ss -plut | grep -i shiny
+```
