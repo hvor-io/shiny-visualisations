@@ -41,8 +41,10 @@ sudo gdebi shiny-server-1.5.20.1002-amd64.deb
 Go into R and install rmarkdown and jsonlite:
 ```
 > R
+> install.packages("shiny")
 > install.packages("rmarkdown")
 > install.packages("jsonlite")
+> install.packages("digest")
 ```
 
 and then 
