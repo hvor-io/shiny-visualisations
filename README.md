@@ -10,6 +10,7 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-u
 
 VERY IMPORTANT. LTS versions please
 
+```
 ## update indices
 sudo apt update -qq
 ## install two helper packages we need
@@ -29,3 +30,4 @@ sudo apt-get install r-base-dev
 sudo apt-get install gdebi-core
 wget https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.20.1002-amd64.deb
 sudo gdebi shiny-server-1.5.20.1002-amd64.deb
+```
