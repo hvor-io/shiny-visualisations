@@ -38,7 +38,7 @@ wget https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.20.1002-
 sudo gdebi shiny-server-1.5.20.1002-amd64.deb
 ```
 
-Go into R and install rmarkdown and jsonlite:
+Go into R and install rmarkdown and jsonlite (install packages on user running shiny-server btw):
 ```
 > R
 > install.packages("shiny")
